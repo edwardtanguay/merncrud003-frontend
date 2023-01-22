@@ -8,9 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "cp": "node cli/cp.mjs",
-		"setup": "pm2 start --name et-mern-crud-site-frontend npm -- start",
+		"setup": "pm2 start --name merncrud003-frontend npm -- start",
 		"start": "vite preview --host --port 5002",
-		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart et-mern-crud-site-frontend"
+		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart merncrud003-frontend --update-env --time && pm2 save"
   },
   "dependencies": {
     "axios": "^1.2.1",
