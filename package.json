@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "cp": "node cli/cp.mjs",
 		"setup": "pm2 start --name merncrud003-frontend npm -- start",
-		"start": "vite preview --host --port 5002",
+		"start": "vite preview --host --port 5004",
 		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart merncrud003-frontend --update-env --time && pm2 save"
   },
   "dependencies": {
